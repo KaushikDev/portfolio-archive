@@ -308,6 +308,20 @@
                 </div>
         
 		</div>
+		<div class="col-xs-12" style="margin-top:20px;">
+		</div>
+		<div class="col-xs-12" style="font-size:25px;color:white;">
+		<p id="postThanks"></p>
+		</div>
+		<div class="col-xs-12">
+		<form id ="form" action="https://twitter.us16.list-manage.com/subscribe/post" method="POST">
+		<input type="hidden" name="u" value="6b7e34e3339b52dfb3f2ad3f4">
+		<input type="hidden" name="id" value="048d6cbe5c">
+		<input type="email" name="MERGE0" id="MERGE0" style="height:30px;width:200px;font-color:white;font-size:15px;border-radius:5px" placeholder='Enter your email here...'>
+		<input type="submit" class="btn" sytle="border-radius:5px;" value="Subscribe" onClick="return postThanks()">
+		</form>
+		</div>	
+		
 		</div>
       <div class="row text-center" style="margin-top:10px;">
 <div class="col-xs-12">
@@ -325,6 +339,27 @@
                 $("a").addClass("animated bounce");
                 $("img").addClass("animated swing");
             });
+		var email;
+function postThanks(){
+email = document.getElementById("MERGE0").value;
+if(!checkEmail(email)){
+//alert("Please enter your email to subscribe");
+document.getElementById("postThanks").innerHTML = "Please enter valid email to subscribe";
+	return false;
+}
+else
+onValidEmail();
+}
+function onValidEmail(){
+//name = document.getElementById("MERGE0").value;
+//document.getElementById("postThanks").innerHTML = "";
+document.getElementById("postThanks").innerHTML = "Thanks for subscribing "+email+". Will keep you posted for new/enhanced apps.";
+document.getElementById("form").action = "https://twitter.us16.list-manage.com/subscribe/post";	
+}
+function checkEmail(email){
+  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(email);
+}
         </script>
         <!--following line of piece of shit code is fucking necessary for navbars to work. I was missing this and this little piece of shit messed my navbar. WTF !!! -->
         <script src="js/bootstrap.js"></script>
