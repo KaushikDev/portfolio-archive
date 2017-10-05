@@ -67,10 +67,11 @@
 
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href=" ">Home</a></li>
-					<li><a href="#h3fourth">Share</a></li>
+         		<li><a href="#h3fourth">Share</a></li>
                     <li><a href="#h3second">About</a></li>
                     <li><a href="" data-toggle="modal" data-target="#portfolio">Portfolio</a></li>
                     <li><a  href="" data-toggle="modal" data-target="#contact">Contact</a></li>
+		<li><a  href="" data-toggle="modal" data-target="#translate">Translate</a></li>
                 </ul>
             </div>
         </div>
@@ -92,6 +93,31 @@
 		  <p>Facebook : <a href="https://www.facebook.com/Rated.Kaushik" target="_blank" ><i class="fa fa-facebook" aria-hidden="true"></i></a></p>
 		  <p>Twitter : <a href="https://twitter.com/kaushik_said" target="_blank" ><i class="fa fa-twitter" aria-hidden="true"></i></a></p>
 		  <p>Quora : <a href="https://www.quora.com/profile/Piyush-Kaushik-8" target="_blank" ><b>Q</b></a></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div> 
+      </div>
+      
+    </div>
+  </div>
+	<!-- Translate Modal -->
+  <div class="modal fade" id="translate" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Translate this page : </h4>
+        </div>
+        <div class="modal-body">
+          <div id="google_translate_element"></div><script type="text/javascript">
+		function googleTranslateElementInit() {
+		  new google.translate.TranslateElement({pageLanguage: 'en', autoDisplay: false}, 'google_translate_element');
+		}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
