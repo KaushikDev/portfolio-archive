@@ -8,6 +8,7 @@ email = document.getElementById("MERGE0").value;
 if(!checkEmail(email)){
 //alert("Please enter your email to subscribe");
 document.getElementById("postThanks").innerHTML = "Please enter valid email to subscribe";
+document.getElementById("postThanks").style.color = "red";	
 	return false;
 }
 else
@@ -16,7 +17,8 @@ onValidEmail();
 function onValidEmail(){
 //name = document.getElementById("MERGE0").value;
 //document.getElementById("postThanks").innerHTML = "";
-document.getElementById("postThanks").innerHTML = "Thanks for subscribing "+email+". We will keep you posted for new/enhanced apps.";
+document.getElementById("postThanks").innerHTML = "Thanks for subscribing with \""+email+"\". We will keep you posted for new/enhanced apps.";
+document.getElementById("postThanks").style.color = "green";		
 document.getElementById("form").action = "https://twitter.us16.list-manage.com/subscribe/post";	
 }
 function checkEmail(email){
