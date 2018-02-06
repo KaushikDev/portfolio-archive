@@ -1,0 +1,343 @@
+<html>
+<head>
+    <title>Piyush Kaushik's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <style>
+        .rowmargin {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+      
+        .placeholderRecentWorks {
+            border-width: 2px;
+            border-style: solid;
+            border-color: white;
+            border-radius: 50%;
+            margin: 0 auto;
+            width: auto;
+            height: width;
+        }
+        #h1first {
+            color: white;
+            font-family: Lobster;
+            margin-top: 100px;
+            text-align: center;
+        }
+        #h3first, #h3second, #h3third, #h3fourth {
+            color: white;
+            font-family: Helvetica;
+            text-align: center;
+        }
+        .btn {
+            color: gray;
+            font-family: Helvetica;
+            font-weight: bold;
+        }
+        
+	    p{
+	    font-size:15px;
+            font-style:normal;
+	    }
+    </style>
+
+    <!-- +++++++++++++++++NAV BAR MENU+++++++++++++++++ -->
+    <div class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-brand">
+
+                <a target="_blank" href="https://kaushikdev.github.io/iBlogged/" target="_blank" class="btn text-center" style="color:white;">iBlogged</a>
+            </div>
+
+            <button class="navbar-toggle btn" data-toggle="collapse" data-target=" .navHeaderCollapse">
+                <i class="fa fa-reorder" style="color:aqua;"></i>
+            </button>
+
+            <div class="collapse navbar-collapse navHeaderCollapse">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href=" ">Home</a></li>
+         	    <li><a href="#h3fourth">Share</a></li>
+                    <li><a href="#h3second">About</a></li>
+                    <li><a href="" data-toggle="modal" data-target="#portfolio">Portfolio</a></li>
+		    <li><a href="" data-toggle="modal" data-target="#blogs">Blogs</a></li>	
+                    <li><a  href="" data-toggle="modal" data-target="#follow">Follow</a></li>
+		    <li><a  href="" data-toggle="modal" data-target="#translate">Translate</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!-- +++++++++++++++++NAV BAR MENU ENDS HERE+++++++++++++++++-->
+<!-- +++++++++++++++++++++++++++++++Header/ Navigation Menu ends here+++++++++++++++++++++++++++++++-->
+
+	<!-- +++++++++++++++++++++++++++++++Modals Begins here+++++++++++++++++++++++++++++++-->	
+
+	<!-- +++++++++++++++++Follow Modal+++++++++++++++++ -->
+  <div class="modal fade" id="follow" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Follow me on : </h4>
+        </div>
+        <div class="modal-body">
+          
+		  <p><a href="https://www.gmail.com" target="_blank" style="color:red"><i class="fa fa-google" aria-hidden="true"></i> : Google</a></p>
+		  
+			  <p><a href="https://www.facebook.com/Rated.Kaushik" target="_blank" style="color:#3b5998"><i class="fa fa-facebook" aria-hidden="true"></i> : Facebook</a></p>
+		 
+			  <p><a href="https://twitter.com/kaushik_said" target="_blank" style="color:turquoise"><i class="fa fa-twitter" aria-hidden="true"></i> : Twitter</a></p>
+		  
+			 <p><a href="https://www.quora.com/profile/Piyush-Kaushik-8" target="_blank" style="color:brown"><i class="fa fa-quora" aria-hidden="true"></i> : Quora</a></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div> 
+      </div>
+      
+    </div>
+  </div>
+<!-- +++++++++++++++++Follow Modal Ends Here+++++++++++++++++-->	
+	
+	<!-- +++++++++++++++++Translate Modal+++++++++++++++++ -->
+  <div class="modal fade" id="translate" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Translate this page : </h4>
+        </div>
+        <div class="modal-body">
+          <div id="google_translate_element"></div>
+		
+		<script type="text/javascript">
+		function googleTranslateElementInit() {
+		  new google.translate.TranslateElement({pageLanguage: 'en', autoDisplay: false}, 'google_translate_element');
+		           }
+                </script>
+		
+		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div> 
+      </div>
+      
+    </div>
+  </div>
+<!-- +++++++++++++++++Translate Modal Ends here+++++++++++++++++-->
+	
+<!-- +++++++++++++++++Blogs Modal+++++++++++++++++ -->
+	<div class="modal fade" id="blogs" role="dialog">
+    <div class="modal-dialog">
+  <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Check out my blogs : </h4>
+        </div>
+        <div class="modal-body">
+          
+		  <p><a href="https://kaushikdev.github.io/iBlogged/" target="_blank" style="color:">CES 2018</a></p>
+		  
+		  
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div> 
+      </div>
+    
+	</div> 
+    </div>	
+<!-- +++++++++++++++++Blogs Modal Ends here+++++++++++++++++-->	
+	
+  <!-- +++++++++++++++++Portfolio Modal+++++++++++++++++ -->
+  <div class="modal fade" id="portfolio" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Checkout my works : </h4>
+        </div>
+        <div class="modal-body">
+ <p>Games :</p>     
+ <p><a href="https://kaushikdev.github.io/BatCrash/" target="_blank" >BatCrash</a></p>
+ <p><a href="https://kaushikdev.github.io/Arkanoid/" target="_blank" >Arkanoid</a></p>
+ <p><a href="https://KaushikDev.github.io/simonGame" target="_blank" >Simon Game</a></p>
+ <p><a href="https://KaushikDev.github.io/TicTacToe" target="_blank" >Tic-Tac-Toe</a></p>
+ <p>Applications :</p> 
+ <p><a href="https://KaushikDev.github.io/pomodoroTimer" target="_blank" >Pomodoro Timer</a></p>
+ <p><a href="https://KaushikDev.github.io/forParents" target="_blank" >A Tribute to Parents</a></p>
+ <p><a href="https://KaushikDev.github.io/electronicCalculator" target="_blank" >Electronic Calculator</a></p>
+ <p><a href="https://KaushikDev.github.io/randomQuotes" target="_blank" >Random Quote Machine</a></p>
+ <p><a href="https://KaushikDev.github.io/wikiViewer" target="_blank" >Wiki Viewer</a></p>
+ <p><a href="https://KaushikDev.github.io/weatherApp" target="_blank" >Weather App</a></p>    
+ <p><a href="https://KaushikDev.github.io/twitchTV" target="_blank" >Twitch TV JSON API</a></p>
+ <p><a href="https://KaushikDev.github.io/FirebaseTODOapp" target="_blank" >To-Do App</a></p>
+ <p><a href="https://KaushikDev.github.io/particleMotion" target="_blank" >Particle Motion</a></p>
+ <p><a href="https://KaushikDev.github.io/DictionaryApp" target="_blank" >Dictionary</a></p>		
+ <p><a href="https://KaushikDev.github.io/DrawingBoard" target="_blank" >DrawingBoard</a></p>
+ <p><a href="https://kaushikdev.github.io/ChatBot" target="_blank" >ChatBot</a></p>
+ 
+	      </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+   <!-- +++++++++++++++++Portfolio Modal Ends Here+++++++++++++++++-->
+	
+    <!-- +++++++++++++++++++++++++++++++Modals ends here+++++++++++++++++++++++++++++++-->
+	
+    <div class="jumbotron" style="background-image:url('');background-attachment:fixed;min-height:auto;margin-bottom:0px;text-align:center;background-color:black">
+        <div class="container-fluid">
+
+
+            <div class="row rowmargin">
+                <div class="col-xs-12">
+                    <h1 id="h1first">Kaushik Code Arts !!</h1>
+                </div>
+            </div>
+
+            <hr class="rowmargin"></hr>
+
+            <div class="row rowmargin">
+                <div class="col-xs-12">
+		    <a href="https://www.facebook.com/Shutter-Bug-Kaushik-365167353566576/?ref=hl" target="_blank" class="btn btn-default  text-center" style="font-size:30px;color:black;"><i class="fa fa-camera" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/Rated.Kaushik" target="_blank" class="btn btn-default text-center" style="font-size:30px;color:black;"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/piyush-kaushik-61166a22?trk=nav_responsive_tab_profile" target="_blank" class="btn btn-default text-center" style="font-size:30px;color:black;"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/kaushik_said" target="_blank" class="btn btn-default text-center" style="font-size:30px;color:black;"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+		    <a href="https://www.quora.com/profile/Piyush-Kaushik-8" target="_blank" class="btn btn-default text-center" style="font-size:30px;color:black;"><i class="fa fa-quora" aria-hidden="true"></i></a>
+			
+
+                </div>
+            </div>
+
+            <div class="row rowmargin">
+                <div class="col-xs-12 centered">
+                    <h3 id="h3first">"Play and learn, learn and grow, grow and be freaking awesome"</h3>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- +++++++++++++++++++++++++++++++First Background Image Section ends here :-]  +++++++++++++++++++++++++++++++-->
+    <div class="jumbotron" style="background-image:url('');background-attachment:fixed;min-height:auto;margin-bottom:0px;text-align:center;background-color:black;">
+        <div class="container">
+
+            <div class="row text-center">
+			<div class="col-xs-12">
+                    <img src="piyush.jpg" alt="piyush" class="img-responsive placeholderRecentWorks">
+                </div>
+			</div>
+            <div class="row text-center">
+                <div class="col-xs-12">
+                    <h3 id="h3second" style="font-family:Lobster;">Hello Hello Hello</h3>
+
+                    <p style="color:white;">
+                        It is good to meet you finally. So, my name is Piyush Kaushik and I am the designer of this website(hope you like it :P ).<br><br>
+                        I am very much a novice programmer and an amateur photographer(check my photography page, there is a button on this site that takes you there).
+                        <br><br>
+                        I like to think and believe that there is nothing that you cannot learn and it is never too late to learn.<i> "From humble beginnings come great things."</i>
+
+                        <br><br>Professionally, I am Software Test Engineer(so, curious about stuff in general) . And I always believe that if you can dream it, you can surely achieve it. Cheers !! 
+                    </p>
+                </div>
+			</div>
+
+        </div>
+    </div>
+
+	<hr class="rowmargin"></hr>
+    <!-- +++++++++++++++++++++++++++++++Second Background Image Section ends here :-]  +++++++++++++++++++++++++++++++-->
+    <div class="jumbotron" style="background-image:url('');background-attachment:fixed;min-height:auto;margin-bottom:0px;text-align:center;background-color:black;">
+        <div class="container">
+
+
+            <div class="row rowmargin">
+                <div class="col-xs-12">
+                    <h3 id="h3third" style="font-family:Lobster;font-size:30px;">My Work Collection</h3>
+                </div>
+            </div>
+
+			 <div class="row rowmargin">
+                <div class="col-xs-12">
+                    <button class="btn btn-lg"  data-toggle="modal" data-target="#portfolio">Portfolio</button>
+                </div>
+            </div>
+
+          
+
+
+        </div>
+    </div>
+
+<hr class="rowmargin"></hr>
+    <!-- +++++++++++++++++++++++++++++++Third Background Image Section ends here :-]  +++++++++++++++++++++++++++++++-->
+    <div class="jumbotron" style="height:auto;margin-bottom:0px;text-align:center;background-color:black;">
+        <div class="container">
+
+
+            <div class="row rowmargin">
+                <div class="col-xs-12">
+                    <h3 id="h3fourth" style="font-family:Lobster;font-size:30px;">You can <i class="fa fa-share-alt-square" aria-hidden="true"></i> this page via</h3>
+           </div>
+               </div>
+			   
+               <div class="row rowmargin">
+                <div class="col-xs-12">
+		<a id="fb" class="btn btn-default text-center" style="background-color:transparent;border-color:transparent;" href="https://www.facebook.com/sharer/sharer.php?u=https://KaushikDev.github.io/portfolio" target="_blank"><i class="fa fa-facebook" aria-hidden="true" style="color:white;font-size:40px;font-weight:bold;"></i></a>
+                <a id="whatsapp" class="btn btn-default text-center" style="background-color:transparent;border-color:transparent;" href="whatsapp://send?text=https://KaushikDev.github.io/portfolio"><i class="fa fa-whatsapp" aria-hidden="true" style="color:white;font-size:40px;font-weight:bold;"></i></a>
+        	<a id="tweet" class="btn btn-default text-center" style="background-color:transparent;border-color:transparent;" href="https://twitter.com/home?status=https://KaushikDev.github.io/portfolio" target="_blank"><i class="fa fa-twitter" aria-hidden="true" style="color:white;font-size:40px;font-weight:bold;"></i></a>
+                </div>
+        
+		</div>
+		<div class="col-xs-12" style="margin-top:20px;">
+			<p style="color:white">If you wish to get updates on my new and ongoing projects, please subscribe below. Thanks !!</p>
+		</div>
+		<div class="col-xs-12" style="font-size:25px;">
+		<p id="postThanks"></p>
+		</div>
+		<div class="col-xs-12">
+		<form id ="form" action="https://twitter.us16.list-manage.com/subscribe/post" method="POST">
+		<input type="hidden" name="u" value="6b7e34e3339b52dfb3f2ad3f4">
+		<input type="hidden" name="id" value="048d6cbe5c">
+		<input type="email" name="MERGE0" id="MERGE0" style="height:30px;width:75%;font-color:white;font-size:15px;border-radius:5px;padding:10px;margin:5px;" placeholder='Enter your email here...'>
+		<input type="submit" class="btn" sytle="border-radius:5px;padding:10px;margin:5px;height:30px;width:auto;font-size:15px;" value="Subscribe" onClick="return postThanks()">
+		</form>
+		</div>	
+		
+		</div>
+      <div class="row text-center" style="margin-top:10px;">
+<div class="col-xs-12">
+<p style="color:white"><i class="fa fa-copyright" aria-hidden="true"></i>KaushikCodeArts 2018</p>
+</div>
+</div>
+		</div>
+        <!-- +++++++++++++++++++++++++++++++Fourth Background Image Section ends here :-]  +++++++++++++++++++++++++++++++-->
+
+        <script src="logic.js">
+           
+        </script>
+        
+      
+</body>
+</html>
