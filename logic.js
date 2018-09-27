@@ -1,3 +1,21 @@
+
+
+
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDXTSwwB78ZO2BCeHpfVbE6Q-o7LiSzLus",
+    authDomain: "pushnotificationproject-6cd09.firebaseapp.com",
+    databaseURL: "https://pushnotificationproject-6cd09.firebaseio.com",
+    projectId: "pushnotificationproject-6cd09",
+    storageBucket: "pushnotificationproject-6cd09.appspot.com",
+    messagingSenderId: "1099139601062"
+  };
+//import { initializeFirebase } from './push-notification';
+  firebase.initializeApp(config);
+   const messaging = firebase.messaging();
+ //==============================================//
+ 
+ 
  $(document).ready(function () {
                 $("a").addClass("animated bounce");
                 $("img").addClass("animated swing");
