@@ -10,9 +10,23 @@
     storageBucket: "pushnotificationproject-6cd09.appspot.com",
     messagingSenderId: "1099139601062"
   };
-//import { initializeFirebase } from './push-notification';
+
   firebase.initializeApp(config);
    const messaging = firebase.messaging();
+   
+   messaging.requestPermission().then(function(){
+	   //getToken(messaging);
+	   return messaging.getToken();
+   }).then(function(token){
+	   console.log(token);
+   }).catch(function(err) {
+	   console.log('Permission Denied', err);
+   });
+   
+   messaging.onMessage(function(payload){
+	   console.log('onMessage: ', payload);
+	   
+   });
  //==============================================//
  
  
