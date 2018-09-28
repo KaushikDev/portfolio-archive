@@ -18,15 +18,19 @@
 	   //getToken(messaging);
 	   return messaging.getToken();
    }).then(function(token){
-	   console.log(token);
+	   console.log("Permission Granted");
+	   console.log("Token is : ",token);
    }).catch(function(err) {
 	   console.log('Permission Denied', err);
-   });
+	   console.log('Error is : ', err);
+   })
    
+   /*
    messaging.onMessage(function(payload){
 	   console.log('onMessage: ', payload);
 	   
    });
+   */
  //==============================================//
  
  
