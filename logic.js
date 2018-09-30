@@ -25,7 +25,12 @@
 	   console.log('Error is : ', err);
    })
    
-
+   
+   messaging.onMessage(function(payload){
+	   console.log('onMessage: ', payload);
+	   
+   });
+   
  //==============================================//
  
  
