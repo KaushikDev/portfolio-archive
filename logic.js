@@ -1,36 +1,4 @@
-
-
-
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyDXTSwwB78ZO2BCeHpfVbE6Q-o7LiSzLus",
-    authDomain: "pushnotificationproject-6cd09.firebaseapp.com",
-    databaseURL: "https://pushnotificationproject-6cd09.firebaseio.com",
-    projectId: "pushnotificationproject-6cd09",
-    storageBucket: "pushnotificationproject-6cd09.appspot.com",
-    messagingSenderId: "1099139601062"
-  };
-
-  firebase.initializeApp(config);
-   const messaging = firebase.messaging();
-   
-   messaging.requestPermission().then(function(){
-	   //getToken(messaging);
-	   return messaging.getToken();
-   }).then(function(token){
-	   console.log("Permission Granted");
-	   console.log("Token is : ",token);
-   }).catch(function(err) {
-	   console.log('Permission Denied', err);
-	   console.log('Error is : ', err);
-   })
-   
-   
-   messaging.onMessage(function(payload){
-	   console.log('onMessage: ', payload);
-	   
-   });
-   
+  
  //==============================================//
  
  
