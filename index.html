@@ -14,6 +14,7 @@
 		background-color:black;
 		color: white;
 		font-size: 15px;
+		 padding-top: 65px; 
 		}
 
 	
@@ -28,6 +29,7 @@
 		   margin-bottom: 1px;
 		  
 		}
+
 
 		.card:hover {
 		  box-shadow: 0 8px 16px 0 rgba(255, 255, 255,0.5);
@@ -51,65 +53,106 @@
 		
 		
 		.rowmargin {
-            margin-top: 30px;
             margin-bottom: 15px;
+			margin-top: 15px;
         }
       
         img {
             
             border-radius: 50%;
-            margin: 50 auto;
+            margin: 0 auto;
             width: 300;
             height: 300;
         }
 		
-		
     
-        #aboutSection, #workSection,#shareSection{
-            color: white;
-            text-align: center;
+        #shareSection{
+            color: black;
+           
         }
 		
-		 #h3second{
-		 color: black;
-		 }
+
         .btn {
-            color: gray;
+            color: black;
             font-weight: bold;
-        }
-        
+			}
+			
+		.btn-default:hover {
+		 background-color:transparent;
+		 border-color:transparent;
+		 font-style:bold;
+	
+		 color:red;
+		}	
+
 	    p{
 	    font-size:15px;
         color: black;
 	    }
 		
 		
-		h1, h5, h4{
+		h1, h3, h4{
 		color:black;
 		width:100%;
 		}
 		
-		input{
+		#profHeading, #aboutHeading, #shareHeading, #worksHeading{
+		background-color:orange;
+		color:white;
 		width:100%;
-		color:black;
-		margin-bottom:5px;
-		border-radius:5px;
+		margin:0 auto;
 		}
-		label{
-		width:80%;
-		margin-bottom:5px;
+		#workSection{
+		color:white;
 		}
 		
 		#fb, #wa, #tw, #li, #in, #qu, #ma{
-		background-color:transparent;border-color:transparent;font-size:20px;
+		border-color:transparent;font-size:30px;color:black;
 		}
 		
+		#fb:hover{
+		color:blue;
+		}
+		#wa:hover{
+		color:green;
+		}
+		#tw:hover{
+		color:skyblue;
+		}
+		#li:hover{
+		color:white;
+		background-color:blue;
+		}
+		#ma:hover{
+		color:red;
+		background-color:white;
+		}
+	
+			
 		li{
 		color: white;
 		}
 		
 		#resumeDiv li, h3{
 		color:black;}
+		
+		#submitButton, #viewmoreButton{
+		background-color:transparent;
+		color:orange;
+		width:100%;
+		margin-bottom:2px;
+		}
+		
+		#MERGE0{
+		background-color:white;
+		color:black;
+		width:100%;
+		margin-bottom:2px;
+		}
+		
+		.apps{
+		border-color:transparent;font-size:100px;color:black;
+		}
     </style>
 
 
@@ -142,11 +185,9 @@
     </div>
 <!-- +++++++++++++++++NAV BAR MENU ENDS HERE+++++++++++++++++-->
 
-<!-- +++++++++++++++++++++++++++++++Header/ Navigation Menu ends here+++++++++++++++++++++++++++++++-->
+<!-- +++++++++++++++++++++++++++++++Modals Begins here+++++++++++++++++++++++++++++++-->	
 
-	<!-- +++++++++++++++++++++++++++++++Modals Begins here+++++++++++++++++++++++++++++++-->	
-
-	<!-- +++++++++++++++++Follow Modal+++++++++++++++++ -->
+<!-- +++++++++++++++++Follow Modal+++++++++++++++++ -->
   <div class="modal fade" id="followModal" role="dialog">
     <div class="modal-dialog">
     
@@ -333,18 +374,18 @@
     </div>
   </div>
    <!-- +++++++++++++++++Portfolio Modal Ends Here+++++++++++++++++-->
-	
+
     <!-- +++++++++++++++++++++++++++++++Modals ends here+++++++++++++++++++++++++++++++-->
 	
    
         <div class="container-fluid">
 
-    <!-- +++++++++++++++++++++++++++++++First Background Image Section ends here :-]  +++++++++++++++++++++++++++++++-->
-    
-       
 
-		<div class="card row">
-			<div class="col-xs-12 text-center">
+<!-------------Profile Section------------->
+		<div class="row text-center">
+			<div class="col-xs-12">
+			<div class="card">
+			<button class="btn"><p id="profHeading" style="color:white;">Portfolio</p></button>
                 <img src="piyushdp.jpeg" alt="piyush" class="img-responsive">
 				<h1>Piyush Kaushik</h1>
 				<p class="title">Founder, KaushikCodeArts</p>
@@ -370,16 +411,17 @@
 					</a>
 				</div>
 				
+				
+			</div>	
 			</div>
 		</div>
-		
-		
-		
-		
-		
-				<div class="card row">
-			<div class="col-xs-12 text-center">
-               <h3 id="aboutSection" style="color:black;">About Me</h3>
+<!-------------Profile Section Ends------------->		
+
+<!-------------About Section-------------------->		
+				<div class="row text-center">
+			<div class="col-xs-12">
+			<div class="card">
+              <button class="btn"><p id="aboutHeading" style="color:white;">About Me</p></button>
 
                     <p>
                         Hey, it is good to meet you. So, my name is Piyush Kaushik and I am the designer and developer of this portfolio.<br><br>
@@ -389,52 +431,62 @@
                      <br><br>I am a front end web development enthusiast and it's early days for me in web development, but I like to keep learning as and when I can.  
                         <br><br>Professionally, I am Software Test Engineer(so, curious about stuff in general) and that's what currently makes my living. But I do hope that I will be able to contribute in active professional front end development someday.And I always believe that if you can dream it, you can surely achieve it. Cheers !! 
                     </p>
-				
+				</div>
 			</div>
 		</div>
+<!-------------About Section Ends-------------------->	
+<!-------------Work Section-------------------------->
+		<div class="row text-center">
+			<div class="col-xs-12">
+				<div class="card">
+					<button class="btn"><p id="worksHeading" style="color:white;">My Recent Works</p></button>
+					
+					<div style="margin: 24px 0;">
+						<a class="btn btn-default apps" href="https://kaushikdev.github.io/budget/" target="_blank">
+							<i class="fa fa-inr" aria-hidden="true"></i><p>BudgetApp</p>
+						</a>
+						
+						<a class="btn btn-default apps" href="https://kaushikdev.github.io/iBlogged/" target="_blank">
+							<i class="fa fa-comment" aria-hidden="true"></i><p>BlogsApp</p>
+						</a>
+						<a class="btn btn-default apps" href="https://kaushikdev.github.io/weatherApp/" target="_blank">
+							<i class="fa fa-thermometer-three-quarters" aria-hidden="true"></i><p>WeatherApp</p>
+						</a>
+						<a class="btn btn-default apps" href="https://kaushikdev.github.io/Arkanoid/" target="_blank">
+							<i class="fa fa-gamepad" aria-hidden="true"></i><p>ArkanoidApp</p>
+						</a>
+						<a class="btn btn-default apps" href="https://kaushikdev.github.io/TicTacToe/" target="_blank">
+							<i class="fa fa-trophy" aria-hidden="true"></i><p>TicTacToeApp</p>
+						</a>
+						<a class="btn btn-default apps" href="https://kaushikdev.github.io/randomQuotes/" target="_blank">
+							<i class="fa fa-quote-right" aria-hidden="true"></i><p>QuotesApp</p>
+						</a>
+
+					<!--
+					<img src="budget.jpg" alt="budgetApp" class="img-responsive">
+					<a id="budgetIcon" class="btn btn-default" href="https://kaushikdev.github.io/budget/" target="_blank">
+				<i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+			</a>
+			-->
+			
+		</div>		
+			<br>
+					<button id="viewmoreButton" class="btn btn-lg"  data-toggle="modal" data-target="#portfolioModal">View More</button>
+				</div>
+			</div>
+		</div>
+<!-------------Work Section Ends-------------------->
 	
-	
-	
-   
- 
-
-	<hr class="rowmargin"></hr>
-    <!-- +++++++++++++++++++++++++++++++Second Background Image Section ends here :-]  +++++++++++++++++++++++++++++++-->
-    
-       
-
-
-            <div class="row rowmargin">
-                <div class="col-xs-12">
-                    <h3 id="workSection">My Work Collection</h3>
-                </div>
-            </div>
-
-	
-	<div class="row rowmargin text-center">
-                <div class="col-xs-12">
-                    <button class="btn btn-lg"  data-toggle="modal" data-target="#portfolioModal">Portfolio</button>
-                </div>
-        </div>
-
-          
-
-<hr class="rowmargin"></hr>
-    <!-- +++++++++++++++++++++++++++++++Third Background Image Section ends here :-]  +++++++++++++++++++++++++++++++-->
-   
-       
-
-
-    <div class="row rowmargin">
-                <div class="col-xs-12">
-                    <h3 id="shareSection">Like my work? <i class="fa fa-share-alt-square" aria-hidden="true"></i> this page via</h3>
-           </div>
-    </div>
-
-			   
-	<div class="row rowmargin text-center">
-	    <div class="col-xs-12">
-			<a id="fb" class="btn btn-default" href="https://www.facebook.com/sharer/sharer.php?u=https://KaushikDev.github.io/portfolio" target="_blank">
+        
+<!-------------Share  Section------------->
+		<div class="row text-center">
+		<div class="col-xs-12">
+			<div class="card">
+                
+				<button class="btn"><p id="shareHeading" style="color:white;">Share and Subscribe</p></button>
+				<br><br>
+				<div style="margin: 24px 0;">
+					<a id="fb" class="btn btn-default" href="https://www.facebook.com/sharer/sharer.php?u=https://KaushikDev.github.io/portfolio" target="_blank">
 				<i class="fa fa-facebook"></i>
 			</a>
 			<a id="wa" class="btn btn-default text-center" href="whatsapp://send?text=https://KaushikDev.github.io/portfolio">
@@ -450,48 +502,33 @@ https://www.linkedin.com/shareArticle?url=https://KaushikDev.github.io/portfolio
 			<a id="ma" class="btn btn-default text-center" href="mailto:?subject=Piyush Kaushik Portfolio.&amp;body=https://KaushikDev.github.io/portfolio" target="_blank">
 				<i class="fa fa-envelope-o" ></i>
 			</a>
+		</div>		
+			<br><br>	
+			<p>Please subscribe, to get updates on our projects.</p>
 			
-	   </div>
-	</div>
-
-
-	<div class="row rowmargin text-center"> 
-		<div class="col-xs-12">
-			<p style="color:white;">Please subscribe below, to get updates on our projects. We DO NOT spam. We keep it to the point. Thanks !!</p>
-		</div>
-	</div>
-
-
-
-	<div class="row rowmargin text-center">
-		<div class="col-xs-12">
-		
-		<div class="form-group">
 		<form id ="form" action="https://twitter.us16.list-manage.com/subscribe/post" method="POST">
 		<input type="hidden" name="u" value="6b7e34e3339b52dfb3f2ad3f4">
 		<input type="hidden" name="id" value="048d6cbe5c">
-				<label for="MERGE0">Email ID</label>
-				<input type="email" name="MERGE0" id="MERGE0">
+				
+				<input type="email" name="MERGE0" id="MERGE0" placeholder="Please enter your email id here...">
 			
-				<input type="submit" class="btn" value="Subscribe" onClick="return postThanks()">
+				<input id="submitButton" type="submit" class="btn" value="Subscribe" onClick="return postThanks()">
 		</form>		
+	<!--		<p><i class="fa fa-copyright"></i>KaushikCodeArts 2018</p>  -->
 			</div>
-		
-		
-		</div>	
-        </div>
+		</div>
+		</div>
 
-
+<!-------------Footer Section------------->
      	 <div class="row text-center" style="margin-top:10px;">
 		<div class="col-xs-12">
 			<p style="color:white"><i class="fa fa-copyright"></i>KaushikCodeArts 2018</p>
 		</div>
 	 </div>
 
-
+<!-------------Footer Section Ends-------------------->
 </div>
-        <!-- +++++++++++++++++++++++++++++++Fourth Background Image Section ends here :-]  +++++++++++++++++++++++++++++++-->
-
+    
         <script src="logic.js"> </script>
 
            
