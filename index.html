@@ -58,14 +58,14 @@
         img {
             
             border-radius: 50%;
-            margin: 0 auto;
+            margin: 50 auto;
             width: 300;
             height: 300;
         }
 		
 		
     
-        #h1first, #h3first,#h3third, #h3fourth {
+        #aboutSection, #workSection,#shareSection{
             color: white;
             text-align: center;
         }
@@ -106,6 +106,9 @@
 		li{
 		color: white;
 		}
+		
+		#resumeDiv li, h3{
+		color:black;}
     </style>
 
 
@@ -126,12 +129,12 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href=" ">Home</a></li>
 					
-                    <li><a href="#h3second">About</a></li>
-                    <li><a href="" data-toggle="modal" data-target="#portfolio">Portfolio</a></li>
-					<li><a href="#h3fourth">Share</a></li>
-					<li><a href="" data-toggle="modal" data-target="#blogs">Blogs</a></li>	
-                    <li><a  href="" data-toggle="modal" data-target="#follow">Follow</a></li>
-					<li><a  href="" data-toggle="modal" data-target="#resume">Resume</a></li>
+                    <li><a href="#aboutSection">About</a></li>
+                    <li><a href="" data-toggle="modal" data-target="#portfolioModal">Portfolio</a></li>
+					<li><a href="#shareSection">Share</a></li>
+					<li><a href="" data-toggle="modal" data-target="#blogsModal">Blogs</a></li>	
+                    <li><a  href="" data-toggle="modal" data-target="#followModal">Follow</a></li>
+					<li><a  href="" data-toggle="modal" data-target="#resumeModal">Resume</a></li>
                 </ul>
             </div>
         </div>
@@ -143,7 +146,7 @@
 	<!-- +++++++++++++++++++++++++++++++Modals Begins here+++++++++++++++++++++++++++++++-->	
 
 	<!-- +++++++++++++++++Follow Modal+++++++++++++++++ -->
-  <div class="modal fade" id="follow" role="dialog">
+  <div class="modal fade" id="followModal" role="dialog">
     <div class="modal-dialog">
     
       
@@ -174,7 +177,7 @@
 	<!-- +++++++++++++++++Resume Modal+++++++++++++++++ -->
   
   
-  <div class="modal fade" id="resume" role="dialog">
+  <div class="modal fade" id="resumeModal" role="dialog">
     <div class="modal-dialog">
     
       
@@ -184,6 +187,65 @@
           <h4 class="modal-title">My Resume</h4>
         </div>
         <div class="modal-body">
+		
+		<div id="resumeDiv">
+		<h3><b>Professional Summary</b></h3>
+<ul>
+	<li>Highly motivated professional with 6.0 years of versatile experience in Software Testing and Client Management.</li>
+	<li>Extensive work experience on Test planning, Test management, Functional and Mobile Testing 	for Health-care IT(Physician Portal and Lab) , Hospitality(Loyalty Membership Programs) and e-Learning applications.</li>
+	<li>Experience in Resource Management, Effort Estimations, Defect Management and Mentoring and Motivating team.</li>
+	<li>Noticeable experience in project management and team leading.</li>
+	<li>Experience of working in Agile Scrum.</li>
+	<li>Versatile team player with good communication and interpersonal skills.</li>
+	<li>Working knowledge of automation tools like selenium and protractor.</li>
+</ul>
+<br>
+<h3><b>Work Experience</b></h3>
+<ol>
+<li>Organization: Sunquest Information Systems, Bangalore, India
+	<br>Duration of Employment: June 01, 2011 - June 18, 2015
+	<br>Designation: Quality Engineer</li>
+	<br>
+<li>Organization: Sunquest Information Systems, London, UK
+	<br>Duration of Employment: June 29, 2015 - December 18, 2015
+	<br>Designation: Quality Engineer</li>
+	<br>
+<li>Organization : Blue Apple Technologies, Noida, India
+	<br>Duration of Employment: May 01, 2017 - Present
+	<br>Designation: Senior Test Engineer cum Project Coordinator</li>
+</ol>
+<br>
+<h3><b>Achievements</b></h3>
+<ul>
+	<li>Center of Excellence-Seek It Award.</li>
+	<li>Screen Award.</li>
+	<li>Personal note of appreciation from Vice President, Quality and Regulatory Affairs.</li>
+	<li>Several Focused Recognitions.</li>
+	<li>Recognized for Integrity at all hands meet at London office.</li>
+	<li>Self-taught front end web developer.</li>
+</ul>
+<br>
+<h3><b>Major Projects</b></h3>
+<ul>
+	
+	<li><b>Sunquest Physician Portal</b>
+	<br>Sunquest Physician Portal offers flexible workflow configurations that accommodate multi-site laboratory environments and a variety of user preferences for computerized physician order entry and results delivery. Manage orders handled by clinicians, office and support staff, use a multi-staged order workflow, allow labs to report partial results and critical or abnormal results as fits the preferences of individual physicians.</li>
+	<br>
+	<li><b>Sunquest Physician Portal Mobile</b>
+	<br>High-quality healthcare requires physicians to access clinical data at all hours. The mobile app can alert physicians to the availability of new test results and provide secure access to patient lab results virtually anytime and anywhere. This provides laboratories with a powerful way to expand services to physician customers. Demonstrate your commitment to deliver the highest level of responsive service, increase customer satisfaction and differentiate your lab from the competition.</li>
+	<br>
+	<li><b>Loyalty Passport</b>
+	<br>Loyalty Passport is a hospitality based program which is built for and managed by hotels to allow their customers to add their loyalty membership cards and also keep track of their points, offers, benefits and promotions. There are 3 entities in this program viz. CRM which is used by Hotels to manage their customers, merchant app(native android and iOS) used by the POS and member app.</li>
+	<br>
+	<li><b>DEP(Digital Engagement Platform)</b>
+	<br>Also known as OCEP, DEP is available in both mobile and web based solutions. Enabling users to have a platform where they can access their hospitality vouchers and keep an account of the vouchers, transactions and summary. Also making redemption and transferring digital vouchers, a smooth experience.</li>
+	<br>
+	<li><b>MySTEMTime</b>
+	<br>An eLearning application for students from all grades, based off youtube model. An intelligent system that recommends video tutorials based on student’s preferences and also shows the trending and popular videos. MySTEMTime encourages students to upload their own videos and allow students to compete with their peers with an intelligent ranking system. Admin, Mentor and Editor features ensure the content is always of highest quality.</li>
+</ul>
+	
+		
+		</div>
          <!-- <div id="google_translate_element"></div>
 		
 		<script type="text/javascript">
@@ -207,7 +269,7 @@
 <!-- +++++++++++++++++Resume Modal Ends here+++++++++++++++++-->
 	
 <!-- +++++++++++++++++Blogs Modal+++++++++++++++++ -->
-	<div class="modal fade" id="blogs" role="dialog">
+	<div class="modal fade" id="blogsModal" role="dialog">
     <div class="modal-dialog">
   <!-- Modal content-->
       <div class="modal-content">
@@ -231,7 +293,7 @@
 <!-- +++++++++++++++++Blogs Modal Ends here+++++++++++++++++-->	
 	
   <!-- +++++++++++++++++Portfolio Modal+++++++++++++++++ -->
-  <div class="modal fade" id="portfolio" role="dialog">
+  <div class="modal fade" id="portfolioModal" role="dialog">
     <div class="modal-dialog">
     
       <!-- Modal content-->
@@ -316,15 +378,15 @@
 		
 				<div class="card row">
 			<div class="col-xs-12 text-center">
-               <h3 id="h3second">About Me</h3>
+               <h3 id="aboutSection" style="color:black;">About Me</h3>
 
                     <p>
-                        It is good to meet you finally. So, my name is Piyush Kaushik and I am the designer of this website.<br><br>
+                        Hey, it is good to meet you. So, my name is Piyush Kaushik and I am the designer and developer of this portfolio.<br><br>
                         I am very much a novice programmer and an amateur photographer(check my photography page, haven't updated it in a while though *facepalm*).
                         <br><br>
                         I like to think and believe that there is nothing that you cannot learn and it is never too late to learn. And as they say,<i> "From humble beginnings come great things."</i>
-                     <br><br>I am a web development enthusiast and it's early days for me in web development, but I like to keep learning as and when I can.  
-                        <br><br>Professionally, I am Software Test Engineer(so, curious about stuff in general) and that's what currently makes my living. But I do hope that I will be able to contribute in active professional development someday.And I always believe that if you can dream it, you can surely achieve it. Cheers !! 
+                     <br><br>I am a front end web development enthusiast and it's early days for me in web development, but I like to keep learning as and when I can.  
+                        <br><br>Professionally, I am Software Test Engineer(so, curious about stuff in general) and that's what currently makes my living. But I do hope that I will be able to contribute in active professional front end development someday.And I always believe that if you can dream it, you can surely achieve it. Cheers !! 
                     </p>
 				
 			</div>
@@ -343,14 +405,14 @@
 
             <div class="row rowmargin">
                 <div class="col-xs-12">
-                    <h3 id="h3third">My Work Collection</h3>
+                    <h3 id="workSection">My Work Collection</h3>
                 </div>
             </div>
 
 	
 	<div class="row rowmargin text-center">
                 <div class="col-xs-12">
-                    <button class="btn btn-lg"  data-toggle="modal" data-target="#portfolio">Portfolio</button>
+                    <button class="btn btn-lg"  data-toggle="modal" data-target="#portfolioModal">Portfolio</button>
                 </div>
         </div>
 
@@ -364,7 +426,7 @@
 
     <div class="row rowmargin">
                 <div class="col-xs-12">
-                    <h3 id="h3fourth">Like my work? <i class="fa fa-share-alt-square" aria-hidden="true"></i> this page via</h3>
+                    <h3 id="shareSection">Like my work? <i class="fa fa-share-alt-square" aria-hidden="true"></i> this page via</h3>
            </div>
     </div>
 
