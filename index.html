@@ -11,7 +11,7 @@
 <body>
     <style>
 		body{
-		background-color:black;
+		background-color:#f1f1f1;
 		color: white;
 		font-size: 15px;
 		 padding-top: 65px; 
@@ -20,7 +20,7 @@
 	
 		.card{
 		 background-color: white;
-		  box-shadow: 0 4px 8px 0 rgba(255, 255, 255,0.2);
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.2);
 		  transition: 0.3s;
 		  width: 100%;
 		  border-radius: 5px;
@@ -32,7 +32,7 @@
 
 
 		.card:hover {
-		  box-shadow: 0 8px 16px 0 rgba(255, 255, 255,0.5);
+		  box-shadow: 0 8px 16px 0 rgba(0, 0, 0,0.5);
 		}
 		
 		.title {
@@ -52,12 +52,7 @@
 		}	
 		
 		
-		.rowmargin {
-            margin-bottom: 15px;
-			margin-top: 15px;
-        }
-      
-        img {
+	    img {
             
             border-radius: 50%;
             margin: 0 auto;
@@ -66,12 +61,6 @@
         }
 		
     
-        #shareSection{
-            color: black;
-           
-        }
-		
-
         .btn {
             color: black;
             font-weight: bold;
@@ -102,11 +91,9 @@
 		width:100%;
 		margin:0 auto;
 		}
-		#workSection{
-		color:white;
-		}
 		
-		#fb, #wa, #tw, #li, #in, #qu, #ma{
+	
+		.shareButton{
 		border-color:transparent;font-size:30px;color:black;
 		}
 		
@@ -173,11 +160,11 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href=" ">Home</a></li>
 					
-                    <li><a href="#aboutSection">About</a></li>
-                    <li><a href="" data-toggle="modal" data-target="#portfolioModal">Portfolio</a></li>
-					<li><a href="#shareSection">Share</a></li>
+                    <li><a href="#aboutHeading">About</a></li>
+                    <li><a href="#worksHeading">Projects</a></li>
+					<li><a href="#shareHeading">Share</a></li>
 					<li><a href="" data-toggle="modal" data-target="#blogsModal">Blogs</a></li>	
-                    <li><a  href="" data-toggle="modal" data-target="#followModal">Follow</a></li>
+                   <!-- <li><a  href="" data-toggle="modal" data-target="#followModal">Follow</a></li> -->
 					<li><a  href="" data-toggle="modal" data-target="#resumeModal">Resume</a></li>
                 </ul>
             </div>
@@ -187,34 +174,7 @@
 
 <!-- +++++++++++++++++++++++++++++++Modals Begins here+++++++++++++++++++++++++++++++-->	
 
-<!-- +++++++++++++++++Follow Modal+++++++++++++++++ -->
-  <div class="modal fade" id="followModal" role="dialog">
-    <div class="modal-dialog">
-    
-      
-      <div class="modal-content">
-        <div class="modal-header text-center">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Follow Me On</h4>
-        </div>
-        <div class="modal-body text-center">
-          
-		          <p><a href="https://www.youtube.com/channel/UCMae1-mY1WmooCdh-xffWDQ" target="_blank" style="color:red">Youtube</a></p>
-		  
-			  <p><a href="https://www.facebook.com/Rated.Kaushik" target="_blank" style="color:#3b5998">Facebook</a></p>
-		 
-			  <p><a href="https://twitter.com/kaushik_said" target="_blank" style="color:turquoise">Twitter</a></p>
-		  
-			 <p><a href="https://www.quora.com/profile/Piyush-Kaushik-8" target="_blank" style="color:brown">Quora</a></p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div> 
-      </div>
-      
-    </div>
-  </div>
-<!-- +++++++++++++++++Follow Modal Ends Here+++++++++++++++++-->	
+
 	
 	<!-- +++++++++++++++++Resume Modal+++++++++++++++++ -->
   
@@ -226,7 +186,7 @@
       <div class="modal-content">
         <div class="modal-header text-center">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">My Resume</h4>
+          <h4 class="modal-title">Piyush Kaushik's Resume</h4>
         </div>
         <div class="modal-body">
 		
@@ -317,11 +277,11 @@
       <div class="modal-content">
         <div class="modal-header text-center">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Check Out My Blogs</h4>
+          <h4 class="modal-title">Blogs By Piyush Kaushik</h4>
         </div>
         <div class="modal-body">
           
-		  <p><a href="https://kaushikdev.github.io/iBlogged/" target="_blank" style="color:">CES 2018 : A brief recap.</a></p>
+		  <p><a href="https://kaushikdev.github.io/iBlogged/" target="_blank" style="color:">CES 2018 : A Brief Recap.</a></p>
 		  
 		  
         </div>
@@ -335,14 +295,14 @@
 <!-- +++++++++++++++++Blogs Modal Ends here+++++++++++++++++-->	
 	
   <!-- +++++++++++++++++Portfolio Modal+++++++++++++++++ -->
-  <div class="modal fade" id="portfolioModal" role="dialog">
+  <div class="modal fade" id="projectsModal" role="dialog">
     <div class="modal-dialog">
     
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Checkout My Other Projects</h4>
+          <h4 class="modal-title">Projects</h4>
         </div>
         <div class="modal-body">
  <p>Games :</p>   
@@ -385,12 +345,12 @@
 		<div class="row text-center">
 			<div class="col-xs-12">
 			<div class="card">
-			<button class="btn"><p id="profHeading" style="color:white;">Portfolio</p></button>
+			<button class="btn"><p name="profHeading" id="profHeading" style="color:white;">Portfolio</p></button>
                 <img src="piyushdp.jpeg" alt="piyush" class="img-responsive">
 				<h1>Piyush Kaushik</h1>
 				<p class="title">Founder, KaushikCodeArts</p>
 				<p style="font-style:italic;">"There are 3 things that keeps me going; Coffee, Pizza and Javascript."</p>
-				<div style="margin: 24px 0;">
+				<div style="margin: 25px 0;">
 					<a href="https://www.facebook.com/Shutter-Bug-Kaushik-365167353566576/?ref=hl" target="_blank" class="btn btn-default">
 						<i class="fa fa-camera"></i>
 					</a>
@@ -421,8 +381,8 @@
 				<div class="row text-center">
 			<div class="col-xs-12">
 			<div class="card">
-              <button class="btn"><p id="aboutHeading" style="color:white;">About Me</p></button>
-
+              <button class="btn"><p name="aboutHeading" id="aboutHeading" style="color:white;">About Piyush Kaushik</p></button>
+				<div style="margin: 25px 0;">
                     <p>
                         Hey, it is good to meet you. So, my name is Piyush Kaushik and I am the designer and developer of this portfolio.<br><br>
                         I am very much a novice programmer and an amateur photographer(check my photography page, haven't updated it in a while though *facepalm*).
@@ -431,6 +391,7 @@
                      <br><br>I am a front end web development enthusiast and it's early days for me in web development, but I like to keep learning as and when I can.  
                         <br><br>Professionally, I am Software Test Engineer(so, curious about stuff in general) and that's what currently makes my living. But I do hope that I will be able to contribute in active professional front end development someday.And I always believe that if you can dream it, you can surely achieve it. Cheers !! 
                     </p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -439,9 +400,9 @@
 		<div class="row text-center">
 			<div class="col-xs-12">
 				<div class="card">
-					<button class="btn"><p id="worksHeading" style="color:white;">My Recent Works</p></button>
+					<button class="btn"><p name="worksHeading" id="worksHeading" style="color:white;">Recent Projects</p></button>
 					
-					<div style="margin: 24px 0;">
+					<div style="margin: 25px 0;">
 						<a class="btn btn-default apps" href="https://kaushikdev.github.io/budget/" target="_blank">
 							<i class="fa fa-inr" aria-hidden="true"></i><p>BudgetApp</p>
 						</a>
@@ -462,16 +423,10 @@
 							<i class="fa fa-quote-right" aria-hidden="true"></i><p>QuotesApp</p>
 						</a>
 
-					<!--
-					<img src="budget.jpg" alt="budgetApp" class="img-responsive">
-					<a id="budgetIcon" class="btn btn-default" href="https://kaushikdev.github.io/budget/" target="_blank">
-				<i class="fa fa-credit-card-alt" aria-hidden="true"></i>
-			</a>
-			-->
-			
+						
 		</div>		
 			<br>
-					<button id="viewmoreButton" class="btn btn-lg"  data-toggle="modal" data-target="#portfolioModal">View More</button>
+					<button id="viewmoreButton" class="btn btn-lg"  data-toggle="modal" data-target="#projectsModal">View More</button>
 				</div>
 			</div>
 		</div>
@@ -483,23 +438,23 @@
 		<div class="col-xs-12">
 			<div class="card">
                 
-				<button class="btn"><p id="shareHeading" style="color:white;">Share and Subscribe</p></button>
+				<button class="btn"><p name="shareHeading" id="shareHeading" style="color:white;">Share and Subscribe</p></button>
 				<br><br>
-				<div style="margin: 24px 0;">
-					<a id="fb" class="btn btn-default" href="https://www.facebook.com/sharer/sharer.php?u=https://KaushikDev.github.io/portfolio" target="_blank">
+				<div style="margin: 25px 0;">
+					<a id="fb" class="btn btn-default shareButton" href="https://www.facebook.com/sharer/sharer.php?u=https://KaushikDev.github.io/portfolio" target="_blank">
 				<i class="fa fa-facebook"></i>
 			</a>
-			<a id="wa" class="btn btn-default text-center" href="whatsapp://send?text=https://KaushikDev.github.io/portfolio">
+			<a id="wa" class="btn btn-default shareButton" href="whatsapp://send?text=https://KaushikDev.github.io/portfolio">
 				<i class="fa fa-whatsapp"></i>
 			</a>
-			<a id="tw" class="btn btn-default text-center" href="https://twitter.com/home?status=https://KaushikDev.github.io/portfolio&hashtags=#PiyushKaushikPortfolio" target="_blank">
+			<a id="tw" class="btn btn-default shareButton" href="https://twitter.com/home?status=https://KaushikDev.github.io/portfolio&hashtags=#PiyushKaushikPortfolio" target="_blank">
 				<i class="fa fa-twitter" ></i>
 			</a>
-			<a id="li" class="btn btn-default text-center" href="
+			<a id="li" class="btn btn-default shareButton" href="
 https://www.linkedin.com/shareArticle?url=https://KaushikDev.github.io/portfolio&title=PiyushKaushikPortfolio" target="_blank">
 				<i class="fa fa-linkedin" ></i>
 			</a>
-			<a id="ma" class="btn btn-default text-center" href="mailto:?subject=Piyush Kaushik Portfolio.&amp;body=https://KaushikDev.github.io/portfolio" target="_blank">
+			<a id="ma" class="btn btn-default shareButton" href="mailto:?subject=Piyush Kaushik Portfolio.&amp;body=https://KaushikDev.github.io/portfolio" target="_blank">
 				<i class="fa fa-envelope-o" ></i>
 			</a>
 		</div>		
