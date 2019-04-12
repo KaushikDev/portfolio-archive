@@ -58,7 +58,7 @@ body{
      background-color:transparent;
      border-color:transparent;
      font-style:bold;
-     color:red;
+     color:silver;
     }	
 
     p{
@@ -73,14 +73,17 @@ body{
     }
     
     #profHeading, #aboutHeading, #shareHeading, #worksHeading{
-    color:white;
     width:100%;
     margin:0 auto;
+    color:white;
+    background-color: gray;
     }
+
+
     
 
     .shareButton{
-    border-color:transparent;font-size:30px;color:silver;
+    border-color:transparent;font-size:30px;color:black;
     }
     
     #fb:hover{
@@ -123,5 +126,7 @@ body{
     }
     
     .apps{
-    border-color:transparent;font-size:100px;color:silver;
+    border-color:transparent;font-size:100px;color:black;
     }
+
+  
